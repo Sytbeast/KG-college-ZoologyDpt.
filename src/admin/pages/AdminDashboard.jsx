@@ -1,6 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link , useNavigate } from "react-router-dom";
 
 const AdminDashboard = () => {
+  const navigate = useNavigate();
+
+  const logout = () => {
+    localStorage.removeItem("token");
+    navigate("/admin/login");
+  }
+  
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       
@@ -30,10 +37,7 @@ const AdminDashboard = () => {
         </Link>
 
         <div
-          onClick={() => {
-            localStorage.removeItem("token");
-            window.location.href = "/admin/login";
-          }}
+          onClick={logout}
           className="bg-red-500 text-white p-6 rounded-xl shadow hover:bg-red-600 transition cursor-pointer"
         >
           <h2 className="text-xl font-semibold mb-2">Logout</h2>
@@ -46,3 +50,4 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
+
