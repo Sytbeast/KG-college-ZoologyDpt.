@@ -23,7 +23,7 @@ const Faculty = () => {
 
   return (
     <div>
-      <div className="bg-green-600 text-white text-center py-16">
+      <div className="bg-green-700 text-white text-center py-16">
         <h2 className="text-4xl font-bold">Our Faculty</h2>
         <p className="text-lg mt-2">
           Meet the team that inspires and leads excellence in Zoology
@@ -59,3 +59,4 @@ const Faculty = () => {
 };
 
 export default Faculty;
+
