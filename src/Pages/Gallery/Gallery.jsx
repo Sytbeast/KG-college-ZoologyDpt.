@@ -17,7 +17,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <div className='bg-green-600 text-white text-center py-16'>
+      <div className='bg-green-700 text-white text-center py-16'>
         <h2 className='md:text-lg mt-2 text-sm'>Explore Our Zoological Research & Studies</h2>
       </div>
 
@@ -50,3 +50,4 @@ const Gallery = () => {
 }
 
 export default Gallery
+
